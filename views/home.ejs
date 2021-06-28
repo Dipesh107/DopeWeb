@@ -1,0 +1,90 @@
+<%- include ('partials/header') %>
+  <button type="submit" class="login-home-btn"><a href="/login">Login</a></button>
+  <div class="bubbles">
+    <img src="/images/bubble.png" alt="">
+    <img src="/images/bubble.png" alt="">
+    <img src="/images/bubble.png" alt="">
+    <img src="/images/bubble.png" alt="">
+    <img src="/images/bubble.png" alt="">
+    <img src="/images/bubble.png" alt="">
+    <img src="/images/bubble.png" alt="">
+  </div>
+
+  <div id="name">
+    <h1>Welcome To Dipesh Patil's Website.</h1>
+  </div>
+
+  <section class="info-section">
+    <div id="slideset1">
+      <div>
+        <div class="info-photos">
+          <img src="/images/saitama.png" alt="">
+        </div>
+        <div class="info-messages">
+          <p><span class="upper-name">SAITAMA - One Punch Man</span><br>
+            <span> My passion is as Strong as Master Saitams's <b>ONE SERIOUS PUNCH.</b> I wanna be a Full Stack Web
+              Developer and
+              purse my studies in Web Developement. I am currently pursuing my Engineering Degree in Mumbai.</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="info-photos">
+          <img src="/images/simpson.png" alt="">
+        </div>
+        <div class="info-messages">
+          <p><span class="upper-name">BART SIMPSON - The Simpsons</span></br>
+            <span>Now go on, boy, and pay attention. Because if you do, someday, you may achieve something that <b>WE
+                SIMPSONS </b>have dreamed about for generations: You may outsmart someone!</span><br>
+            <span>This Quote Helps me to acheive my goals.</span>
+          </p>
+        </div>
+      </div>
+      <div>
+        <div class="info-photos">
+          <img src="/images/perry.png" alt="">
+        </div>
+        <div class="info-messages">
+          <p><span class="upper-name">PERRY THE PLATYPUS - Phineas and Ferb</span></br>
+            <span>He is my Favourite that's why he is here Nothing else Inspirational. <br>LOL ! <br> Love the way he
+              performs his actions with his intelligence. </span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="main">
+    <div class="container2">
+      <form action="/join" method="POST" class="join-form">
+        <img src="/images/logo.png" class="logo logo2" alt="DOPE WEB">
+        <!-- <h2 style="text-align: center;align-items: center;">Join Our Community</h2> -->
+        <input type="text" class="inputs" name="fullName" required placeholder="Full Name">
+        <input type="email" name="email" class="inputs" required placeholder="Email Id">
+        <input type="text" class="inputs" name="specs" id="specs" placeholder="Mention Your Specializations" required>
+
+        <a href="#">
+          <input type="submit" value="Submit" name="submit" class="btn1">
+        </a>
+      </form>
+    </div>
+    <div class="info">
+      <h1>Join our <span class="comm">Community</span></h1>
+      <p>Serve for our community by filling up side form and Joining the community.</p>
+      <a href="#">
+        <input type="button" class="learn" value="Learn More">
+      </a>
+    </div>
+  </section>
+
+
+  <section class="footer">
+    <ul>
+      <li><a href="#"><i class="fab fa-github-square"></i>GitHub</a></li>
+      <li><a href="#"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i>Instagram</a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i>Twitter</a></li>
+    </ul>
+  </section>
+
+  <%- include ('partials/footer') %>

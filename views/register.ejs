@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/login.css">
+  <title>Register</title>
+</head>
+
+<body>
+
+  <section class="login my-5 mx-5">
+    <div class="container">
+      <div class="row g-0">
+        <div class="col-lg-5">
+          <img class="login-sideimg" src="/images/login3.jpg" alt="login-image">
+        </div>
+        <div class="col-lg-7 px-5 pt-5">
+          <img src="/images/logo.png" class="logo mb-4" alt="DOPE WEB">
+
+          <form action="/register" method="POST">
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="text" class="form-control my-3 p-3" name="registerName" required placeholder="Full Name">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="email" class="form-control my-3 p-3" name="registerEmail" required
+                  placeholder="Email Address">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="password" class="form-control my-3 p-3" name="password1" placeholder="Create Passsword">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="password" class="form-control my-3 p-3" name="password2" placeholder="Confirm Passsword">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="col-lg-7">
+                <input type="submit" value="Sign Up" class="btn1 mt-3 mb-4">
+              </div>
+            </div>
+
+            <p>Already Have an account? <a href="/">Sign In</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+
+
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

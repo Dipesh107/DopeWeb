@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Page</title>
+  <link rel="stylesheet" href="/css/contact.css">
+  <script src="https://kit.fontawesome.com/ff14eec93e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <section class="contact">
+    <div class="navbar">
+      <nav id="menu">
+        <button type="submit" class="login-btn"><a href="/login">Login</a></button>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/contact">Contact Us</a></li>
+          <li><a href="/about">About Me</a></li>
+          <li><a href="/newsletter">Newsletter</a></li>
+        </ul>
+        <img src="/images/cross.png" class="close-icon" alt="close-icon" onclick="closemenu()">
+      </nav>
+      <img src="/images/menu.png" class="menu-icon" alt="menu-btn" onclick="openmenu()">
+    </div>
+
+    <div class="content">
+      <h2 style="color: #fff;">Contact Us</h2>
+      <p>Welcome To Dope web. For any suggestions and queries contact us below.</p>
+    </div>
+    <div class="container">
+      <div class="contactInfo">
+        <div class="box">
+          <div class="icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div class="text">
+            <h4>Address</h4>
+            <p>RAIT college</p>
+            <p>Nerul, Navi Mumbai.</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="far fa-envelope"></i></div>
+          <div class="text">
+            <h4>Email</h4>
+            <p>patildipesh045@gmail.com , dipeshpatil013@gmail.com</p>
+          </div>
+        </div>
+        <div class="box">
+          <div class="icon"><i class="fas fa-link"></i></div>
+          <div class="text">
+            <h4>Socials</h4>
+            <p><i class="socials fab fa-github-square"></i><a class="links-socials" href="#">GitHub</a></p>
+            <p><i class="socials fab fa-linkedin"></i><a class="links-socials" href="#">LinkedIn</a></p>
+            <p><i class="socials fab fa-instagram"></i><a class="links-socials" href="#">Instagram</a></p>
+            <p><i class="socials fab fa-twitter"></i><a class="links-socials" href="#">Twitter</a></p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contactform">
+        <form action="/contact" method="POST">
+          <h2>Send Message</h2>
+          <div class="inputbox">
+            <input type="text" required name="name" placeholder="Full Name">
+          </div>
+          <div class="inputbox">
+            <input type="email" required name="email" placeholder="Email">
+          </div>
+          <div class="inputbox">
+            <input type="textarea" required name="message" placeholder="Type Your Message...">
+          </div>
+          <div class="inputbox">
+            <input type="submit" value="submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <script>
+    var menu = document.getElementById("menu");
+    function closemenu() {
+      menu.style.top = "-100vh";
+    }
+    function openmenu() {
+      menu.style.top = "0";
+    }
+  </script>
+</body>
+
+</html>

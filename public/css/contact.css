@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.contact{
+  position: relative;
+  min-height: 100vh;
+  padding: 50px 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(20, 20, 20, 0.4), rgba(0,0,0,0.4)), url(/images/1.jpg); 
+  background-size: cover;
+}
+
+.contact .content{
+  max-width: 800px;
+  text-align: center;
+}
+
+.contact .content h2 {
+  font-size: 36px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.contact .content p {
+  font-weight: 300;
+  color: #fff;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.container .contactInfo {
+  width: 26%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  font-size: 16px;
+  margin-left: 20px;
+  color: #fff;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h4 {
+  font-weight: 500;
+  color: #1173e4;
+}
+
+.links-socials {
+  color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  text-decoration: none;
+}
+
+.contactform {
+  width: 40%;
+  margin: auto;
+  padding: 40px;
+  background: #fff;
+}
+
+.contactform h2 {
+  font-size: 30px;
+  color: #333;
+  font-weight: 500;
+}
+
+.contactform .inputbox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactform .inputbox input,
+.contactform .inputbox textarea 
+ {
+  width: 100%;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border: none;
+  border-bottom: 2px solid #333;  
+  outline: none;
+}
+
+.contactform .inputbox input[type="submit"]{
+  width: 100%;
+  background: #00bcd4;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.navbar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto;
+  font-family: 'Baloo Bhai 2', cursive;
+}
+
+.logo img {
+  cursor: pointer;
+  width: 100%;
+  height: 140px;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 25px 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 40px;
+  color: #fff;
+  padding: 2% 10px;
+  position: relative;
+}
+
+nav ul li a::after {
+  transition: 0.5s;
+  height: 3px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background: #eea16d;
+  bottom: 0;
+  left: 0;
+}
+
+nav ul li a:hover {
+  width: 100%;
+  color: #eea16d;
+  transition: 0.5s;
+}
+
+nav ul li::after {
+  transition: 0.5s;
+  height: 3px;
+  width: 100%;
+  content: "";
+  position: absolute;
+  background: #eea16d;
+  bottom: 0;
+  left: 0;
+}
+
+nav {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  top: -100vh;
+  left: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: 1s;
+}
+
+.login-btn {
+  color: #fff;
+  position: absolute;
+  padding: 10px 40px ;
+  background: transparent;
+  border: 3px solid #eea16d;
+  border-radius: 35px;
+  right: 80px;
+  top: 45px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  transition: 0.5s ease-in-out;
+}
+
+.login-btn a {
+  text-decoration: none;
+  color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.login-btn:hover {
+  color: #fff;
+  background-color: #eea16d;
+  border: 3px solid;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.close-icon {
+  filter: invert(100%);
+  width: 25px;
+  position: absolute;
+  left: 160px;
+  top: 70px;
+  cursor: pointer;
+}
+
+.menu-icon {
+  filter: invert(100%);
+  width: 40px;
+  cursor: pointer;
+}
+
+@media (max-width: 1284px) {
+  .container2 {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: auto;
+  }
+}
