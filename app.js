@@ -11,30 +11,30 @@ const port = 3000;
 const app = express();
 
 //Setting view engines for ejs templates
-app.set('view engine', 'ejs');
-app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static("public"));
+app.set('view engine', 'ejs');
 
 
 //connecting to database
 mongoose.connect("mongodb://localhost/personalDB", { useNewUrlParser: true, useUnifiedTopology: true });
 
 //creating schema as we want
-const contactSchema = {
+const contactSchema = new mongoose.Schema({
   name: String,
   email: String,
   message: String
-};
+});
 
-const userSchema = {
+const userSchema = new mongoose.Schema({
   name: String,
   email: String,
   password: String
-}
+});
 
 //Using the Schema to create models
-const Contact = mongoose.model("Contact", contactSchema);
-const User = mongoose.model("User", userSchema);
+const Contact = new mongoose.model("Contact", contactSchema);
+const User = new mongoose.model("User", userSchema);
 
 //Calling methods get and post
 app.get("/login", function (req, res) {
